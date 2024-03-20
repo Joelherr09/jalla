@@ -10,7 +10,7 @@ const Contacto = () => {
                 <div className='flex justify-center items-center px-2'>
                     <FaPhoneAlt/>
                 </div>
-                <a href="https://web.whatsapp.com/send?phone=56949453696&text=%C2%A1Hola!%20Deseo%20hacer%20una%20reserva%20para%20mi%20Caba%C3%B1a!"><p className='text-bold pl-2'>+56 9 4945 3696</p></a>
+                <a><p className='text-bold pl-2'>+56 9 XXXX XXXX</p></a>
                 
             </div>
             <p className='text-[0.8rem] text-center'>Nuestro horario de atención es de Lunes a Viernes de 09:00 a 19:00 horas</p>
