@@ -10,7 +10,7 @@ const Contacto = () => {
                 <div className='flex justify-center items-center px-2'>
                     <FaPhoneAlt/>
                 </div>
-                <a><p className='text-bold pl-2'>+56 9 XXXX XXXX</p></a>
+                <a href="/"><p className='text-bold pl-2'>+56 9 XXXX XXXX</p></a>
                 
             </div>
             <p className='text-[0.8rem] text-center'>Nuestro horario de atención es de Lunes a Viernes de 09:00 a 19:00 horas</p>
