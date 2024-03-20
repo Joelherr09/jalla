@@ -1,4 +1,5 @@
 import './App.css';
+import Contacto from './components/Contacto';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Historia from './pages/Historia';
@@ -14,6 +15,7 @@ function App() {
       <Hero/>
       <Integrantes/>
       <Historia/>
+      <Contacto/>
 
     </div>
   );
