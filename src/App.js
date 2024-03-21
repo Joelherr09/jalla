@@ -5,22 +5,20 @@ import Navbar from './components/Navbar';
 import ProximosEventos from './components/ProximosEventos';
 import Youtube from './components/Youtube';
 import Historia from './pages/Historia';
-import Integrantes from './pages/Integrantes'
 
 function App() {
   return (
     <div >
         <Navbar/>
         <Hero/>
-      <div className='flex flex-col md:grid md:grid-cols-2 w-[80%] mx-auto bg-[#00030060]'>
-        <div className='der w-[95%] flex flex-col justify-center mx-auto'>
+      <div className='flex flex-col pt-8 px-8 md:grid md:grid-cols-2 w-[90%] mx-auto gap-8 items-start justify-start bg-[#00030060]'>
+        <div className='der w-full flex flex-col justify-center mx-auto'>
           <Youtube/>
           <ProximosEventos/>
-          <Historia/>
         </div>
 
-        <div className='izq  w-[95%] flex flex-col mx-auto items-start justify-start'>
-          <Integrantes/>
+        <div className='izq  w-full flex flex-col mx-auto items-start justify-start'>
+          <Historia/>
           <Contacto/>
         </div>
       </div>
