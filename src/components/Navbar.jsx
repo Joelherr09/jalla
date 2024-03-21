@@ -16,7 +16,7 @@ const Navbar = () => {
         </div>
         <ul className='hidden md:flex uppercase'>
             <a href="/">
-                <li className='p-4 hover:text-gray-800 hover:scale-105 duration-300 '>Agenda</li>
+                <li className='p-4 hover:text-gray-800  hover:scale-105 duration-300 '>Agenda</li>
             </a>
             <a href="/">
                 <li className='p-4 hover:text-gray-800 hover:scale-105 duration-300'>Historia</li>
