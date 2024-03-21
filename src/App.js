@@ -1,6 +1,7 @@
 import './App.css';
 import Contacto from './components/Contacto';
 import Hero from './components/Hero';
+import Instagram from './components/Instagram';
 import Navbar from './components/Navbar';
 import ProximosEventos from './components/ProximosEventos';
 import Youtube from './components/Youtube';
@@ -18,6 +19,7 @@ function App() {
         </div>
 
         <div className='izq  w-full flex flex-col mx-auto items-start justify-start'>
+          <Instagram/>
           <Historia/>
           <Contacto/>
         </div>
