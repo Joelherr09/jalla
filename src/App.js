@@ -19,7 +19,7 @@ function App() {
         </div>
 
         <div className='izq  w-full flex flex-col mx-auto items-start justify-start'>
-          <Instagram/>
+          <Instagram/>  
           <Historia/>
           <Contacto/>
         </div>

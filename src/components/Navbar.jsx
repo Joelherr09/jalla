@@ -10,13 +10,13 @@ const Navbar = () => {
     }
 
   return (
-    <div className='flex items-center fixed justify-between md:justify-start px-8 h-24 w-full shadow-lg shadow-orange-500/50 bg-[#da7533] mx-auto text-white'>
+    <div className='flex items-center z-50 fixed justify-between md:justify-start px-8 h-24 w-full shadow-lg shadow-orange-500/50 bg-[#da7533] mx-auto text-white'>
         <div className='md:flex'>        
             <a href="/"><img className='py-2 max-h-[100px] hover:scale-105 duration-300' src={Logo} alt="" /></a>
         </div>
         <ul className='hidden md:flex uppercase'>
-            <a href="/">
-                <li className='p-4 hover:text-gray-800  hover:scale-105 duration-300 '>Agenda</li>
+            <a className='p-4 hover:text-gray-800  hover:scale-105 duration-300 ' href="/">
+                <li >Agenda</li>
             </a>
             <a href="/">
                 <li className='p-4 hover:text-gray-800 hover:scale-105 duration-300'>Historia</li>
@@ -46,19 +46,19 @@ const Navbar = () => {
                 <img className='h-full hover:scale-105 duration-300' src={Logo} alt="" />
             </div>
                 <ul className='p-4 uppercase' >
-                    <a href="/" onClick={handleNav}>
+                    <a className='p-4 hover:text-gray-800  hover:scale-105 duration-300 '  href="/" onClick={handleNav}>
                         <li className='p-4 border-b border-gray-600'>Agenda</li>
                     </a>
-                    <a href="/" onClick={handleNav}>
+                    <a className='p-4 hover:text-gray-800  hover:scale-105 duration-300 ' href="/" onClick={handleNav}>
                         <li className='p-4 border-b border-gray-600'>Historia</li>
                     </a>
-                    <a href="/" onClick={handleNav}>
+                    <a className='p-4 hover:text-gray-800  hover:scale-105 duration-300 ' href="/" onClick={handleNav}>
                         <li className='p-4 border-b border-gray-600'>Integrantes</li>
                     </a>
-                    <a href="/" onClick={handleNav}>
+                    <a className='p-4 hover:text-gray-800  hover:scale-105 duration-300 ' href="/" onClick={handleNav}>
                         <li className='p-4 border-b border-gray-600'>Prensa</li>
                     </a>
-                    <a href="/" onClick={handleNav}>
+                    <a className='p-4 hover:text-gray-800  hover:scale-105 duration-300 ' href="/" onClick={handleNav}>
                         <li className='p-4'>Fotos</li>
                     </a>
                 </ul>
