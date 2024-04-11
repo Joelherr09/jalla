@@ -4,7 +4,7 @@ import { FaInstagram,FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='w-[90%] mx-auto mt-12 h-full bg-[#00030060]'>
+    <div className='w-full mx-auto mt-12 h-full bg-[#00030060]'>
         
         <div className='font-bold text-xl p-4 text-center flex w-full mx-auto justify-center gap-8' >
             <Link to="https://www.instagram.com/jallas_coquimbo/"><FaInstagram size={50} className='hover:scale-105 duration-300 hover:shadow-lg hover:shadow-orange-500/50' /></Link>
