@@ -11,13 +11,13 @@ const Navbar = () => {
     }
 
   return (
-    <div className='flex items-center z-50 fixed top-0 justify-between md:justify-start px-8 h-24 w-full shadow-lg shadow-orange-500/50 bg-[#da7533] mx-auto text-white'>
+    <div className='flex items-center z-50 fixed top-0 justify-between md:justify-start px-8 h-20 md:h-[80px] w-full shadow-lg shadow-orange-500/50 bg-[#da7533] mx-auto text-white'>
 
         <div className='flex w-[90%] mx-auto items-center justify-between'>
 
             <div className='md:flex'>        
                 <Link to="/">
-                    <img className='py-2 max-h-[100px] hover:scale-105 duration-300' src={Logo} alt="" />
+                    <img className='py-2 max-h-[80px] md:max-h-[80px] hover:scale-105 duration-300' src={Logo} alt="" />
                 </Link>
             </div>
             <ul className='hidden md:flex uppercase gap-4'>
@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full border-r min-w-[300px] border-r-gray-900 bg-[#da7533] ease-in-out duration-500' : 'fixed left-[-100%]'}>
 
             <div className='w-full h-24 flex object-contain'>        
-                <Link to="/"><img className='h-full hover:scale-105 duration-300' src={Logo} alt="" /></Link>
+                <Link to="/"><img className='h-[90%] pt-2 pl-8 hover:scale-105 duration-300' src={Logo} alt="" /></Link>
             </div>
                 <ul className='p-4 uppercase' >
                     <Link to="/agenda" className='p-4 hover:text-gray-800  hover:scale-105 duration-300 '   onClick={handleNav}>
