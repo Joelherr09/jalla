@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 import Logo from '../assets/logo.png'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const [nav, setNav] = useState(true)
@@ -10,13 +11,13 @@ const Navbar = () => {
     }
 
   return (
-    <div className='flex items-center z-50 fixed justify-between md:justify-start px-8 h-24 w-full shadow-lg shadow-orange-500/50 bg-[#da7533] mx-auto text-white'>
+    <div className='flex items-center z-50 fixed top-0 justify-between md:justify-start px-8 h-24 w-full shadow-lg shadow-orange-500/50 bg-[#da7533] mx-auto text-white'>
         <div className='md:flex'>        
-            <a href="/"><img className='py-2 max-h-[100px] hover:scale-105 duration-300' src={Logo} alt="" /></a>
+            <Link to="/"><img className='py-2 max-h-[100px] hover:scale-105 duration-300' src={Logo} alt="" /></Link>
         </div>
         <ul className='hidden md:flex uppercase'>
             <a className='p-4 hover:text-gray-800  hover:scale-105 duration-300 ' href="/">
-                <li >Agenda</li>
+                <Link to="/agenda"><li >Agenda</li></Link>
             </a>
             <a href="/">
                 <li className='p-4 hover:text-gray-800 hover:scale-105 duration-300'>Historia</li>
