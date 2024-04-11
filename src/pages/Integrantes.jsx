@@ -1,6 +1,7 @@
 import React from 'react'
 import IntegranteUno from '../assets/Integrantes/carlos.jpg'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Integrantes = () => {
   return (
@@ -61,6 +62,8 @@ const Integrantes = () => {
 
     </div>
 
+
+    <Footer/>
 
 </div>
   )

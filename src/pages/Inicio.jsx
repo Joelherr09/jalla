@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import ProximosEventos from '../components/ProximosEventos';
 import Youtube from '../components/Youtube';
 import Historia from '../components/HistoriaComp';
+import Footer from '../components/Footer';
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
 
 
       
-      
+      <Footer/>
 
     </div>
   );

@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Logo from '../assets/logo.png'
+import Footer from '../components/Footer'
 
 const Historia = () => {
   return (
@@ -17,6 +18,11 @@ A la palabra jalla se le agrega la letra "S" al final como distintivo, es asi qu
 Gracias a todos nuestros amigos por el apoyo y el cariño, un abrazo .!</p>
       </div>
       <img className='py-2 max-h-[150px] hover:scale-105 duration-300' src={Logo} alt="" />
+    
+    
+    
+      <Footer/>
+    
     </div>
   )
 }

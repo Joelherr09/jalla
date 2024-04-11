@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import ProximosEventos from '../components/ProximosEventos'
+import Footer from '../components/Footer'
 
 const Agenda = () => {
   return (
@@ -12,6 +13,7 @@ const Agenda = () => {
         </div>
 
 
+        <Footer/>
     </div>
   )
 }
