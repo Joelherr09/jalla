@@ -1,11 +1,11 @@
 import React from 'react'
-import HeroLogo from '../assets/logo-hero.png'
+import Logo from '../assets/logo.png'
 
 const Hero = () => {
   return (
     <div className='flex flex-col justify-center items-center mx-auto h-[100vh]'>
-        <img className='md:h-[40%] sm:h-[20%] min-w-[100px] w-[60%] flex mx-auto' src={HeroLogo} alt="" />
-        <h1 className='font-black text-3xl'>EN CONSTRUCCIÓN</h1>
+        <img className='md:h-[40%] sm:h-[20%] min-w-[100px] w-[60%] flex mx-auto' src={Logo} alt="" />
+        <h1 className='font-black text-3xl pt-12'>EN CONSTRUCCIÓN</h1>
     </div>
   )
 }

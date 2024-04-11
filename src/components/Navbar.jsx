@@ -20,7 +20,7 @@ const Navbar = () => {
                 <Link to="/agenda"><li >Agenda</li></Link>
             </a>
             <a href="/">
-                <li className='p-4 hover:text-gray-800 hover:scale-105 duration-300'>Historia</li>
+                <Link to="/historia"><li className='p-4 hover:text-gray-800 hover:scale-105 duration-300'>Historia</li></Link>
             </a>
             <a href="/">
                 <li className='p-4 hover:text-gray-800 hover:scale-105 duration-300'>Integrantes</li>
