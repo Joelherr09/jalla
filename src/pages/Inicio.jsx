@@ -5,7 +5,7 @@ import Instagram from '../components/Instagram';
 import Navbar from '../components/Navbar';
 import ProximosEventos from '../components/ProximosEventos';
 import Youtube from '../components/Youtube';
-import Historia from './Historia';
+import Historia from '../components/HistoriaComp';
 
 function App() {
   return (
