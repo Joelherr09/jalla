@@ -12,7 +12,7 @@ function App() {
     <div >
         <Navbar/>
         <Hero/>
-      <div className='flex flex-col pt-8 px-8 md:grid md:grid-cols-2 w-[90%] mx-auto gap-8 items-start justify-start bg-[#00030060]'>
+      <div className='flex flex-col pt-8 px-8 md:grid md:grid-cols-2 w-[96%] mx-auto gap-8 items-start justify-start '>
         <div className='der w-full flex flex-col justify-center mx-auto'>
           <Youtube/>
           <ProximosEventos/>
