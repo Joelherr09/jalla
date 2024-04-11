@@ -16,21 +16,15 @@ const Navbar = () => {
             <Link to="/"><img className='py-2 max-h-[100px] hover:scale-105 duration-300' src={Logo} alt="" /></Link>
         </div>
         <ul className='hidden md:flex uppercase'>
-            <a className='p-4 hover:text-gray-800  hover:scale-105 duration-300 ' href="/">
-                <Link to="/agenda"><li >Agenda</li></Link>
-            </a>
-            <a href="/">
-                <Link to="/historia"><li className='p-4 hover:text-gray-800 hover:scale-105 duration-300'>Historia</li></Link>
-            </a>
-            <a href="/">
+            <Link to="/agenda" className='p-4 hover:text-gray-800  hover:scale-105 duration-300 ' href="/">
+                <li >Agenda</li>
+            </Link>
+            <Link to="/historia">
+                <li className='p-4 hover:text-gray-800 hover:scale-105 duration-300'>Historia</li>
+            </Link>
+            <Link to="/integrantes">
                 <li className='p-4 hover:text-gray-800 hover:scale-105 duration-300'>Integrantes</li>
-            </a>
-            <a href="/">
-                <li className='p-4 hover:text-gray-800 hover:scale-105 duration-300'>Prensa</li>
-            </a>
-            <a href="/">
-                <li className='p-4 hover:text-gray-800 hover:scale-105 duration-300'>Fotos</li>
-            </a>
+            </Link>
             
         </ul>
 
@@ -44,24 +38,18 @@ const Navbar = () => {
         <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full border-r min-w-[300px] border-r-gray-900 bg-[#da7533] ease-in-out duration-500' : 'fixed left-[-100%]'}>
 
             <div className='w-full h-24 flex object-contain'>        
-                <img className='h-full hover:scale-105 duration-300' src={Logo} alt="" />
+                <Link to="/"><img className='h-full hover:scale-105 duration-300' src={Logo} alt="" /></Link>
             </div>
                 <ul className='p-4 uppercase' >
-                    <a className='p-4 hover:text-gray-800  hover:scale-105 duration-300 '  href="/" onClick={handleNav}>
+                    <Link to="/agenda" className='p-4 hover:text-gray-800  hover:scale-105 duration-300 '   onClick={handleNav}>
                         <li className='p-4 border-b border-gray-600'>Agenda</li>
-                    </a>
-                    <a className='p-4 hover:text-gray-800  hover:scale-105 duration-300 ' href="/" onClick={handleNav}>
+                    </Link>
+                    <Link to="/historia" className='p-4 hover:text-gray-800  hover:scale-105 duration-300 '  onClick={handleNav}>
                         <li className='p-4 border-b border-gray-600'>Historia</li>
-                    </a>
-                    <a className='p-4 hover:text-gray-800  hover:scale-105 duration-300 ' href="/" onClick={handleNav}>
+                    </Link>
+                    <Link to="/integrantes" className='p-4 hover:text-gray-800  hover:scale-105 duration-300 ' href="/" onClick={handleNav}>
                         <li className='p-4 border-b border-gray-600'>Integrantes</li>
-                    </a>
-                    <a className='p-4 hover:text-gray-800  hover:scale-105 duration-300 ' href="/" onClick={handleNav}>
-                        <li className='p-4 border-b border-gray-600'>Prensa</li>
-                    </a>
-                    <a className='p-4 hover:text-gray-800  hover:scale-105 duration-300 ' href="/" onClick={handleNav}>
-                        <li className='p-4'>Fotos</li>
-                    </a>
+                    </Link>
                 </ul>
         </div>
     </div>

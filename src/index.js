@@ -5,6 +5,7 @@ import './index.css';
 import Inicio from './pages/Inicio';
 import Agenda from './pages/Agenda'
 import Historia from './pages/Historia';
+import Integrantes from './pages/Integrantes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/historia",
     element: <Historia/>
+  },
+  {
+    path: "/integrantes",
+    element: <Integrantes/>
   }
 ])
 
