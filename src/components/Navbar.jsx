@@ -12,22 +12,28 @@ const Navbar = () => {
 
   return (
     <div className='flex items-center z-50 fixed top-0 justify-between md:justify-start px-8 h-24 w-full shadow-lg shadow-orange-500/50 bg-[#da7533] mx-auto text-white'>
-        <div className='md:flex'>        
-            <Link to="/"><img className='py-2 max-h-[100px] hover:scale-105 duration-300' src={Logo} alt="" /></Link>
-        </div>
-        <ul className='hidden md:flex uppercase'>
-            <Link to="/agenda" className='p-4 hover:text-gray-800  hover:scale-105 duration-300 ' href="/">
-                <li >Agenda</li>
-            </Link>
-            <Link to="/historia">
-                <li className='p-4 hover:text-gray-800 hover:scale-105 duration-300'>Historia</li>
-            </Link>
-            <Link to="/integrantes">
-                <li className='p-4 hover:text-gray-800 hover:scale-105 duration-300'>Integrantes</li>
-            </Link>
-            
-        </ul>
 
+        <div className='flex w-[90%] mx-auto items-center justify-between'>
+
+            <div className='md:flex'>        
+                <Link to="/">
+                    <img className='py-2 max-h-[100px] hover:scale-105 duration-300' src={Logo} alt="" />
+                </Link>
+            </div>
+            <ul className='hidden md:flex uppercase gap-4'>
+                <Link to="/agenda" href="/">
+                    <li  className='p-4 hover:text-gray-800 text-xl font-bold hover:scale-105 duration-300 '>Agenda</li>
+                </Link>
+                <Link to="/historia">
+                    <li className='p-4 hover:text-gray-800 hover:scale-105 duration-300 text-xl font-bold'>Historia</li>
+                </Link>
+                <Link to="/integrantes">
+                    <li className='p-4 hover:text-gray-800 hover:scale-105 duration-300 text-xl font-bold'>Integrantes</li>
+                </Link>
+                
+            </ul>
+
+        </div>
 
         <div onClick={handleNav} className=' md:hidden block'>
             {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}

@@ -5,7 +5,6 @@ import Instagram from '../components/Instagram';
 import Navbar from '../components/Navbar';
 import ProximosEventos from '../components/ProximosEventos';
 import Youtube from '../components/Youtube';
-import Historia from '../components/HistoriaComp';
 import Footer from '../components/Footer';
 
 function App() {
@@ -20,8 +19,7 @@ function App() {
         </div>
 
         <div className='izq  w-full flex flex-col mx-auto items-start justify-start'>
-          <Instagram/>  
-          <Historia/>
+          <Instagram/>
           <Contacto/>
         </div>
       </div>
